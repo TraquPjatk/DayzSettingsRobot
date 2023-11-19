@@ -24,7 +24,6 @@ public class Main {
         }
         initializeResolutionMap(MOUSE_POSITION_1920x1080_MAP, "1920x1080");
         System.out.println(MOUSE_POSITION_1920x1080_MAP.entrySet());
-//        System.exit(666);
     }
 
     public static void main(String[] args) {
