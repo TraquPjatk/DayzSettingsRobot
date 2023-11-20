@@ -59,8 +59,8 @@ public class Main {
 
     private static void openGraphicalSettings() {
 
+        mouseClick(1);
         Main.ROBOT.keyPress(KeyEvent.VK_ESCAPE);
-        sleep();
         Main.ROBOT.mouseMove(MOUSE_POSITION_1920x1080_MAP.get("SETTINGS").getX(), MOUSE_POSITION_1920x1080_MAP.get("SETTINGS").getY());
         mouseClick(1);
         Main.ROBOT.mouseMove(MOUSE_POSITION_1920x1080_MAP.get("VIDEO").getX(), MOUSE_POSITION_1920x1080_MAP.get("VIDEO").getY());
