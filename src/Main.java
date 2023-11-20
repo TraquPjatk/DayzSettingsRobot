@@ -11,7 +11,7 @@ import java.util.Map;
 public class Main {
 
     private static final Robot ROBOT;
-    private static final int SLEEP_FOR = 150;
+    private static final int SLEEP_FOR = 180;
     private static boolean IS_CHECK_MOUSEINFO = false;
 
     private static final Map<String, MousePosition> MOUSE_POSITION_1920x1080_MAP = new HashMap<>();
@@ -60,6 +60,7 @@ public class Main {
     private static void openGraphicalSettings() {
 
         Main.ROBOT.keyPress(KeyEvent.VK_ESCAPE);
+        sleep();
         Main.ROBOT.mouseMove(MOUSE_POSITION_1920x1080_MAP.get("SETTINGS").getX(), MOUSE_POSITION_1920x1080_MAP.get("SETTINGS").getY());
         mouseClick(1);
         Main.ROBOT.mouseMove(MOUSE_POSITION_1920x1080_MAP.get("VIDEO").getX(), MOUSE_POSITION_1920x1080_MAP.get("VIDEO").getY());
